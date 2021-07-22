@@ -26,6 +26,12 @@
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+
+  &:focus {
+    fill: var(--accent-color);
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .close-btn-icon {
@@ -33,10 +39,10 @@
   height: 18px;
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-btn-icon:hover,
-.close-btn:focus {
-  fill: var(--accent-color);
-  outline: none;
-  border-color: var(--accent-color);
+
+  &:hover {
+    fill: var(--accent-color);
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
