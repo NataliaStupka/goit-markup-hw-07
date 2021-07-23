@@ -1,3 +1,17 @@
+/* ПРИСОЕДЕНЯЙТЕСЬ */
+.social-footer {
+  width: 206px;
+}
+
+.social-footer-title {
+  margin-bottom: 20px;
+  font-style: normal;
+  @include font(14px, 700, 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .social-list {
   display: flex;
   justify-content: space-between;
