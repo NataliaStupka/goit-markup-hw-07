@@ -1,22 +1,8 @@
-/* ПРИСОЕДЕНЯЙТЕСЬ */
-.social-footer {
-  width: 206px;
-}
-
-.social-footer-title {
-  margin-bottom: 20px;
-  font-style: normal;
-  @include font(14px, 700, 1.14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 .social-list {
   display: flex;
   justify-content: space-between;
 }
-.social-list-link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,15 +20,29 @@
   }
 }
 
-.social-list-icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
 }
-.social-light {
+
+.social-list_light {
   fill: var(--icon-color);
   background-color: #ffffff;
 }
-.social-dark {
+.social-list_dark {
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
+}
+/* ПРИСОЕДЕНЯЙТЕСЬ - footer */
+.social-footer {
+  width: 206px;
+}
+
+.social-footer__title {
+  margin-bottom: 20px;
+  font-style: normal;
+  @include font(14px, 700, 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
