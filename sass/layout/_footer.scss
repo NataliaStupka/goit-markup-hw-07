@@ -4,26 +4,17 @@
   padding-bottom: 60px;
   background-color: var(--background-footer-hero);
 }
-.footer-address-social {
+.footer__contact-data {
   display: flex;
   align-items: baseline;
 }
 
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  @include font(26px, 700, 1.19);
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.logo-footer span {
-  color: var(--accent-color);
-}
-.footer-contact {
+.contact-info__address {
   margin-top: 20px;
   margin-right: 70px;
 }
 
-.footer-item {
+.contact-info__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -40,11 +31,7 @@
   }
 }
 
-.footer-mail {
-  margin-bottom: 9px;
-}
-
-.footer-mail-link {
+.contact-info__link {
   display: inline-block;
 
   font-style: normal;
@@ -59,36 +46,23 @@
   }
 }
 
-.footer-tel {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  @include font(14px, 400, 1.71);
-  letter-spacing: 0.03em;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #ffffff;
-  }
-}
-
 /* Подписка на рассылку */
-.footer-newsletter {
+.footer__newsletter {
   margin-left: 93px;
 }
-.footer-newsletter-text {
+.footer__newsletter-text {
   font-style: normal;
   @include font(14px, 700, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
-.footer-form {
+.footer__form {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.footer-form-input {
+.footer__form-input {
   width: 358px;
   height: 50px;
   background-color: var(--background-footer-hero);

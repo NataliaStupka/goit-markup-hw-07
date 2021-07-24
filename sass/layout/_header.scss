@@ -5,7 +5,7 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,12 +16,12 @@
   display: flex;
   align-items: center;
 }
-.nav-menu {
+.nav__menu {
   display: flex;
   align-items: center;
 }
 
-.menu-item {
+.nav__item {
   position: relative;
 
   &:not(:last-child) {
@@ -29,7 +29,7 @@
   }
 }
 
-.menu-link {
+.nav__link {
   padding-top: 32px;
   padding-bottom: 22px;
 
@@ -72,30 +72,30 @@
 }
 
 /* контакты */
-.contact {
+.header__contact {
   display: flex;
   align-items: center;
 }
 
-.contact-item:not(:last-child) {
+.header__contact-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-mail-icon {
+.header__contact-mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
-.contact-tel-icon {
+.header__contact-tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact-mail,
-.contact-tel {
+.header__contact-mail,
+.header__contact-tel {
   display: flex;
   align-items: center;
   @include font(14px, 500, 1.14);
