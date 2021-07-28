@@ -14,9 +14,15 @@
   margin-right: 70px;
 }
 
-.contact-info__item:not(:last-child) {
-  margin-bottom: 9px;
+.contact-info__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
+
+// .contact-info__item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 
 .contact-info__address-link {
   font-style: normal;
