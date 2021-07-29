@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
 }
-.modal-form-head {
+.modal-form__head {
   @include font(20px, 700, 1.15);
   font-style: normal;
   text-align: center;
@@ -12,20 +12,20 @@
 
   margin-bottom: 12px;
 }
-.modal-form-field {
+.modal-form__field {
   @include font(12px, 400, 1.17);
   margin-bottom: 10px;
   font-style: normal;
   letter-spacing: 0.01em;
   color: var(--primery-text-color);
 }
-.modal-form-input-wrapper {
+.modal-form__input-wrapper {
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.modal-form-icon {
+.modal-form__icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -52,13 +52,13 @@
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-form-input:focus + &,
-  .modal-form-input:hover + & {
+  .modal-form__input:focus + &,
+  .modal-form__input:hover + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-form-message {
+.modal-form__message {
   width: 100%;
   height: 120px;
   margin-top: 4px;
@@ -82,7 +82,7 @@
   }
 }
 
-.modal-form-checkbox-label {
+.modal-form__checkbox-label {
   @include font(14px, 400, 1.71);
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@
     margin-right: 7px;
   }
 }
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+.modal-form__checkbox:checked + .modal-form__checkbox-label::before {
   background-image: url(../imeges/icon-check.svg);
   width: 16px;
   height: 15px;
@@ -110,12 +110,12 @@
   border-radius: 2px;
   background-position: center;
 }
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+.modal-form__checkbox:focus + .modal-form__checkbox-label::before {
   border-color: var(--accent-color);
   border-radius: 2px;
 }
 
-.modal-form-label-link {
+.modal-form__label-link {
   color: var(--accent-color);
 
   &:focus {
@@ -123,7 +123,7 @@
   }
 }
 
-.modal-form-button {
+.modal-form__button {
   width: 200px;
   height: 50px;
   margin: 0 auto;

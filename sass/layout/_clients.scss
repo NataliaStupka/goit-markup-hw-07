@@ -5,7 +5,7 @@
   padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 
   font-style: normal;
@@ -15,12 +15,12 @@
   color: var(--title-text-color);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.clients-link {
+.clients__link {
   fill: var(--icon-color);
   display: flex;
   align-items: center;

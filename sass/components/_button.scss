@@ -12,7 +12,7 @@
   letter-spacing: 0.06em;
 }
 
-.main-button {
+.main__button {
   padding: 10px 32px;
   align-items: center;
 
@@ -41,7 +41,7 @@
 }
 
 // button - page portfolio
-.button-secondary {
+.portfolio__filter-btn {
   @include font(16px, 500, 1.62);
   padding: 6px 22px;
   border: none;

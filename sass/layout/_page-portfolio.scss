@@ -7,25 +7,27 @@
   padding-bottom: 94px;
 }
 
-.portfolio-filter {
+.portfolio__filter {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
+.portfolio__filter-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
-.project-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.project-item {
+.project__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -42,34 +44,34 @@
   }
 }
 
-.project-card {
+.project__card {
   padding: 20px 24px;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
 
-.project-title {
+.project__title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
   @include font(18px, 700, 2);
   letter-spacing: 0.06em;
 }
-.project-text {
+.project__text {
   color: var(--primery-text-color);
   @include font(16px, 400, 1.87);
   letter-spacing: 0.03em;
 }
 
-.project-link {
+.project__link {
   display: block;
 }
-.div-overlay {
+.project__div-overlay {
   position: relative;
   overflow: hidden;
 }
-.project-overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -88,8 +90,8 @@
   transform: translateY(100%);
   transition: transform 500ms linear;
 
-  .project-link:hover &,
-  .project-link:focus & {
+  .project__link:hover &,
+  .project__link:focus & {
     transform: translateY(0%);
   }
 }

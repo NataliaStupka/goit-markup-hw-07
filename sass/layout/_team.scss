@@ -19,8 +19,10 @@
   align-items: center;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+.team__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__card {

@@ -11,7 +11,7 @@
   transform: translate(-50%, -50%);
   padding: 40px;
 }
-.close-btn {
+.modal__close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@
   }
 }
 
-.close-btn-icon {
+.modal__close-btn-icon {
   width: 18px;
   height: 18px;
   fill: #000000;
